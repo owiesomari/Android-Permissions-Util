@@ -1,6 +1,5 @@
 package com.example.permissionutil
 
-
 import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
@@ -14,7 +13,6 @@ import androidx.annotation.NonNull
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-
 
 class PermissionsUtil private constructor(private val context: Context, private val registry: ActivityResultRegistry) : DefaultLifecycleObserver {
     private lateinit var callBack: PermissionsListenerCallback
@@ -63,6 +61,7 @@ class PermissionsUtil private constructor(private val context: Context, private 
             setPositiveButton(context.getString(R.string.DIALOG_POSITIVE_BUTTON)) { _, _ ->
                 openSetting()
             }
+
             setNegativeButton(context.getString(R.string.DIALOG_CANCEL)) { _, _ ->
                 callBack.onPermissionDialogCancel()
             }
