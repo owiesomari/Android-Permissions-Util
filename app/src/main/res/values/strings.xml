@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Permissions Util</string>
+    <string name="DIALOG_POSITIVE_BUTTON">OPEN SETTINGS</string>
+    <string name="DIALOG_CANCEL">CANCEL</string>
+    <string name="DIALOG_MESSAGE">%1s Access has been denied. You will have to update your settings to access your files</string>
+    <string name="request_write_permission">request Write Permission</string>
+</resources>
